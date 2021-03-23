@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    cout<<"Enter the sender's data: "<<endl;
+    string data;
+    int count{0};
+    cin>>data;
+    int lenth_string = data.length();
+    for(int i=0;i<lenth_string;i++)
+    {
+        if(data[i] == '1'){
+            count++;
+        }
+    }
+    string vrc;
+    if(count%2 == 0){
+        vrc = '0' + data;
+    }
+    else{
+        vrc = '1'+data;
+    }
+    cout<<"The VRC of the data, "<<data<<" = "<<vrc<<endl;
+
+
+}
